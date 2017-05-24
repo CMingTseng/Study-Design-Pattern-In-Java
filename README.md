@@ -33,34 +33,41 @@
   - CHAPTER 01 物件導向程式設計5項基本原則-SOLID
   - CHAPTER 02 單例模式Singleton
   - CHAPTER 03 簡單工廠模式Simple Factory
+
 第2天:
   - CHAPTER 04 工廠模式Factory
   - CHAPTER 05 抽象工廠模式 Abstract Factory
   - CHAPTER 06 策略模式Strategy
   - CHAPTER 07 裝飾者模式 Decorator
+
 第3天:
   - CHAPTER 08 觀察者模式 Observer
   - CHAPTER 09 命令模式 Command
   - CHAPTER 10 轉接器模式 Adapter
   - CHAPTER 11 表象（外觀）模式 Facade
+
 第4天:
   - CHAPTER 12 樣版模式 Template
   - CHAPTER 13 合成模式 Composite
   - CHAPTER 14 狀態模式 State
   - CHAPTER 15 代理模式 Proxy
+
 第5天:
   - CHAPTER 16 走訪器模式 Iterator
   - CHAPTER 17 建造者模式 Builder
   - CHAPTER 18 責任鏈模式 Chain Of Responsibility
   - CHAPTER 19 解譯器模式 Interpreter
+
 第6天:
   - CHAPTER 20 中介者模式 Mediator
   - CHAPTER 21 原型模式 Prototype
   - CHAPTER 22 橋梁模式 Bridge
+
 第7天:
   - CHAPTER 23 備忘錄模式 Memento
   - CHAPTER 24 蠅量級（享元）模式 Flyweight
   - CHAPTER 25 拜訪者模式 Visitor
+
 附錄APPENDIX:
   - 單元測試工具JUnit4 簡介附錄
 

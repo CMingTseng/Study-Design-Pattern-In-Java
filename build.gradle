@@ -1,0 +1,40 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+version = '1.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'a.uml'
+//http://yrulee.logdown.com/posts/233710-android-studio-start-with-unit-test
+//https://www.mkyong.com/gradle/gradle-create-a-jar-file-with-dependencies/
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Study DesignPattern In Java Example',
+                'Implementation-Version': version,
+                'Main-Class': "a.uml"
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+
+sourceSets {
+    main {
+//        manifest.srcFile '/src/main/AndroidManifest.xml'
+        java.srcDirs = ['/src/main/java']
+    }
+    instrumentTest.java.srcDirs = ['/src/test/java']
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+}

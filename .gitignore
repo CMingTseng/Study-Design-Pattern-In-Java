@@ -109,7 +109,7 @@ tmp/
 
 # Keep external libs
 !app/libs/*.jar
-!huafulib/libs/*.jar
+
 
 # script output
 check-dpi.txt*
